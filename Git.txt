@@ -1,0 +1,1056 @@
+Devops:
+-> Devops is not a new tool/technology in the market.
+-> it is a new culture or process to develop,release and maintenance of software application/project/product with higher quality in very faster way.
+-> we can achive by using automation tools
+-> for any software product,two groups of engineer will work
+i. Development Group
+ii. Operations Group/Non-Development Group/Administrators Group
+
+-> again this classification can be divided into small sets of group.
+
+
+Development Group:->
+-> The people who are involving in 
+i. Planning
+ii. Coding
+iii. Build
+iv. Testing
+are considered as development Group.
+Business Analyst(BA)
+System Analyst(SA)
+Design Architect(DA)
+Developers/Coders
+Build Engineer
+Test Engineer/QA
+
+Operations Group:
+-> The people who are involving in
+i. Release
+ii. Deployment
+iii. Operations
+iv. Monitoring
+are considered as Operations Group.
+-> eg:
+Configuration Engineer
+System Admin
+Database Admin
+Network Admin
+etc.
+
+-> Devops is a combination of development and operations.
+-> The main objective of devops is to implement collaboration between development and operations teams.
+-> To understand this new Devops culture,we have to aware already existing SDLC models.
+i. Waterfall Model
+ii. Prototype Model
+iii. Incremental/Iterative Model
+iv. Spiral Model
+v. RAD Model
+vi. Big-Bang Model
+vii. Fish Model
+viii. V Model
+ix. Agile Model
+x. Devops Model
+
+Water Fall Model:->
+i. Requirement Gathering/Collection
+ii. Requirement Analysis
+iii. Design
+iv. Coding
+v. Testing
+vi. Release
+vii. Maintenance
+-> also known as linear sequential model
+
+Limitations:
+-> Development time will be increases
+-> Cost of development will be increases
+-> It won't accept requirement changes in the middle
+-> client satisfaction is very very low
+-> Bug fixing is very costly because we can not identify bugs in early stages of life cycle.
+-> Not at all suitable if requirements keep on changing
+-> Not suitable for large projects.
+
+Advantages:
+-> It is very simple and easy to implement.
+-> Best suitable if requirements are fixed.
+-> Best suitable for small projects.
+
+
+Agile Model:
+-> This was the most frequently used and hot cake model in software development.
+-> agile model is divided into multiple sub models
+i. Rational Unify Process(RUP)
+ii. Adaptive Software Development(ASD)
+iii. Feature Driven Developement(FDD)
+iv. Crystal Clear
+v. Dynamic Software Development Method(DSDM)
+vi. Extream Programming(XP)
+vii. SCRUM Model
+etc
+-> Among all these models Scrum model is most popular and frequently used model.
+-> Agile -> Speed
+-> SCRUM is Agile based model
+-> it is not linear sequential model.
+-> it is iterative model. total software product will be developed increament by increament and each increment is called
+a sprint.
+-> SCRUM is derived from Rugby Game
+-> In every sprint 7-9 members will work
+-> each sprint will be delivered from one week to 3 week time.
+
+Why we should go for Devops??
+-> Devops and agile both are different models.
+
+Similarities:
+-> Both are software development methodologies.
+-> Both models concentrating on rapid software development with team colloboration.
+
+Differences:
+-> The diference will come once development of the project completed.
+-> Agile model talks about only development but not operations.
+-> Devops models talks about complete product life cycle like development and operations.
+-> In Agile model, separate people are responsible or development,testing,deployment etc.
+-> but in devops, the devops engineer is responsible or everything like development to operations and operations to development.
+-> Agile model won't force us to use automation tools but devops model is completely based on automation.
+-> Agile is always giving highest priority only for speed. devops giving the priority or both quality and speed.
+-> In agile, client is responsible to give the feedback or the sprint.but in devops, immediate feedback is available from the monitoring tools.
+
+
+Version Contorl System Tool:
+-> Version control system is also known as Software Configuration Management(SCM) or Source Code Management(SCM).
+
+Need of Version Control System?->
+-> Maintaining multiple versions manually is very complex activity.
+-> Every change should be tracked
+who did the change
+when he did the change
+which changes he did etc
+-> Overwriting of the code should not be happend.
+-> Developers have to share their code to peer developers, so that multiple developer will work in collaborative way.
+-> Parallel development must be required.
+
+How Version Control System Works?
+-> Version control system always talks about files which contain source code.
+
+Working Directory:
+-> Where developers are required to create/modify files.
+-> Here version control is not applicable. Here we won't use the work like version-1,version-2 etc.
+
+Repository:
+-> Where we have to store files and metadata.
+-> Here version control is applicable
+-> Here we can talk about versions like version-1 and version-2 etc.
+
+Commit:
+-> The process of sending files from working directory to the repository.
+
+Checkout:
+-> The process of sending iles from repository to working directory
+
+
+Benefits Of Version Control System?
+-> We can different versions and we can choose any version based on client requirement.
+-> With every version/commit we can maintain metadata like
+commit message
+who did changes
+when he did changes
+what changes he did
+-> Developers can share the code to the peer developer in very easy way.
+-> Multiple developers can work in colloborative way.
+-> Parallel development.
+-> We can provide access control like
+who can read code
+who can modify code
+
+
+
+Types Of Version Control System:
+i.Centralized Version Control System
+ii. De-centralized/Distributed Version Control System.
+
+Centralized:
+-> Only one central repository, every developer is required to connect with that to continue his work.
+-> The total project code will be stored in central repository.
+-> is very easy to setup and easy to use.
+
+
+Limitations:
+-> The total code stored at a single place.single point of failure.if something goes wrong. recovery is very dificult.
+-> All checkout and commit operations will be performed by cibbectuibg wutg remote central repository server.i.e all developers 
+should be connected with central repository always.if network outage,version control won't be available for the developers.
+-> All checkout and commit operations will be performed by connecting with remote central repository server. the operations will be
+performed over the network and these are not llocal operaitons.performance is low.
+-> if the number of developers increases or number of files increases. organization of central repository is a bit difficult.
+
+
+Distributed Version Control System:->
+-> All commit and checkout operations will be performed locally and hence performance is more.
+-> Even network outage,still version control is available.
+-> There is no question of single point of failure.
+
+Commit and Checkout:
+-> These operations will be performed locally between working directory and repository.
+-> To perform these operations network is not required.
+
+Push and Pull:->
+push: The process of sending files from our repository to other's respository
+pull: The process of getting files from other's repository to local repository.
+-> push and pull will be performed between 2 repositories.
+-> these are remote operations.
+-> Compulsary network must be required.
+
+Centralized VS:-> SVN,CVS,TFS etc.
+Distributed VS:-> GIT,Mecurial,Fossil
+
+
+GIT:->
+-> it is a distributed version control system tool.
+-> it is developed by Linus Torvalds.
+
+Features of GIT:-> 
+i. Distributed
+-> No single point o failure. Every developer has local repository.
+-> Performance is more | speed is more
+-> Without network also, developer can continue his work.workspace and remote repository need not be connected always.
+
+ii. Staging Area
+-> In git commiting is 2-step process.
+-> First we have to add files to the staging area and then we have to commit from that staging area.
+-> advantage of staging area is we can cross checko or double check our changes before commit. if everything is fine then we can commit.
+-> working directory -> Staging area -> Local repository
+-> In local repository, file size will be less compare to dev workspace right?
+
+iii. Branching and Merging
+-> we can create and work on multiple branches simultaneously and all these branches are isolated from each other. it enalbes multiple work flows
+
+iv. FREEware and Open Source
+v. It provides support for multiple platforms.
+
+Git Architecture:->
+-> working directory -> staging area -> local repository -> remote repository
+-> Usually the total project code will be available in remote repository.
+-> The current work of developer will be stored in local repository.
+-> New files will be created in working directory.
+-> once work completed, we have to add these files to staging area. for this we have to use git add command.
+git add => sending files from working directory to staging area.
+-> once files are moved to staging area we can moved these changes to local repository using commit command
+git commit => Stages changes will be moved to local repository.
+-> we can move changes in local repo to remote repo using push command
+git push => To moves file from local repo to remote repo.
+-> we can bring files from remote repo to local repo we can use either git clone or git pull.
+git clone => to create a new local repository from the remote repository
+git pull => to get updated files from remote repository to local repository.
+
+
+Life Cycle Of File in GIT:->
+-> Every file in the git, is one of the following 4 states
+i. Untracked
+ii. Staged
+iii. In Repository / Committed
+iv. Modified
+
+Untracked:->
+-> Every new file will be created in working directory.these new files are does not are of these new files. such type of files are 
+said to be in untracked state.
+git status => To know status of files in all areas.
+
+Staged:->
+-> The files which are added to staging area are said to be in staged state.
+git add a.txt
+git add .
+git add a.txt b.txt c.txt
+git add *.txt
+
+
+In Repository / Committed:->
+-> Any file which is committed is said to be in repository state or committed state.
+-> we can commit staged changes by using git commit command.
+-> before commit we need to provide user information to the git
+git config --global user.email "maheshlamichhane048@gmail.com"
+git config --global user.name "Mahesh Lamichhane"
+git commit -m "A new file a.txt added"
+-> for modified file we can commit in one line
+git commit -a -m "commit message"
+
+
+
+Modified:
+-> If the file added to staging area or commited it is said to be tracked by git.
+ls => list all files in working directory. it is linux command
+git ls-files => it will list all files which are tracked by git.it is a git command.
+-> any file which is already tracked by git but it is modified in working directory
+is said to be in modified state.
+
+
+Git Basic Commands:->
+
+i. git init
+->  To provide/create an empty repository to our workspace so that version control is available to our working directory.
+-> Once we creates workspace,if we want version control,we require a repository.
+-> git is responsible for providing local repository using command git init.
+
+ii. git status
+-> it shows the current status of all files in each area, like
+untracked files
+modified files
+staged files
+-> if we want consise output we have to use -s option
+git status
+git status -s
+
+iii. git add
+-> To add files from working directory to staging area.
+-> Once we added files to staging area, then git tracks these files and reday for commit.
+-> staging area <-> index area <-> cache area
+-> it is logical/virtual area but not physical area.
+-> To add all files in current working directory
+git add .
+-> To add particular files
+git add file1.txt file2.txt
+-> we can use even regular expression patterns also
+git add *.java
+git add *.txt
+
+iv. git ls-files
+v. ls
+
+vi. git commit
+-> if we want to commit staged changes.
+->for every commit unique id will be generated.
+-> git commit -m "commit message"
+-> this commit is also called id/hash is hexadecimal number of 40 characters.
+-> For every commit git records 
+auther name and mail id
+timestamp
+commit message
+-> it is possible to commit one new file and one modified file at once.
+-> git uses SHA-1 hash function.
+-> the unique commit id is in hash format which improves security and less space.
+
+
+vii. git config
+-> git config command can be used for git configurations like user name, mail id,etc
+git config --list -> to list out all git configurations
+git config user.name -> to print username
+git config user.name "Ravi" -> to set username
+git config user.email -> to print email
+git config user.email "xyz@gmail.com" -> to set email
+
+without global vs with global:
+-> For all repositories which is managed by current git ===> global
+-> with global means configurations applicable for all repository
+-> wihout global means: configurations applicable only for current repository.
+
+
+viii. git log
+-> it shows history of all commits
+commit id
+authot name and mail id
+timestamp
+commit message
+-> provides detailed logs information.
+-> HEAD is pointing to the master branch then master pointing to the most recent commit.
+-> we can change the pointing of HEAD to another commit
+-> git log --help for detailed information.
+
+How to see log information of a particular file:
+-> git log 
+git log .
+git log file1.txt
+
+How to see log brief information:
+-> git log --oneline
+-> it will show one line per commit
+-> this option is very helpful if we have lot of commits and to identify commit based on message.
+
+-n option to limit the number of commits to display:
+-> git log -n 2
+-> git log -2 also
+-> it is going to show only 2 lateast commits.
+-> git log -n 3 --online
+-> git log -3 --online also
+-> it is going to show only 2 lateast commits in single line commits.
+-> git log --max-count=2 --online
+
+--grep option to serarch based on given pattern in the commit message:
+-> git log --grep=Pattern
+-> git log --grep ="added" --oneline
+
+Show commits more recent than a specific date or time:
+-> git log --since="2020-02-22" or --after="2020-02-22" are same. --after="10 days ago",--after="4 hour ago" also possible.
+
+
+show commits older than a specific time:
+-> --until and --before are same. same as above for options.
+
+Show commits based on the author:->
+-> --author = <pattern>
+-> git log --author = Durga
+-> git log 
+
+--decorate option to display extra inormation:
+-> branch name,HEAD,tags information etc.
+-> git log --decorate --oneline
+
+diff command:->
+case-1:-> To see differences in file content between working directory and staging area:
+git diff file1.txt:-> to compare working directory and staging areafor file1
+git diff:-> to compare all the file between working directory and staging area.   
+
+i. working directory vs staged copy
+git diff file1.txt
+
+ii. working directory vs last commit
+git diff HEAD file1.txt
+
+iii. Staging Area vs last commit
+git diff --staged HEAD file1.txt
+git diff --cached HEAD file1.txt
+git diff --staged file1.txt
+
+iv. working directory vs specified commit
+git diff commitid file1.txt
+
+v. Staging area vs specified commit:
+git diff --stage commitid file1.txt
+
+vi. between two commits
+git diff source_commit_id destination_commit_id file1.txt
+
+vii. last commit vs last but one commit:
+git diff HEAD HEAD~1 file1.txt
+git diff HEAD HEAD^1 file1.txt
+
+viii. to compare all files
+git diff source_commit_id destination_commit_id
+
+ix. two branches in local repository
+git diff source_branch_name destination_branch_name
+
+x. local repo vs remote repo:
+git diff localbranchname remotebranchname
+git diff master origin/master
+
+Visual tool for checking differences:
+i. Helix Visual Merge Tool(p4merge)
+ii. Meld
+etc
+p4merge ===> Merge Tool as well as Diff tool
+-> install p4merge 
+-> set path of p4merge file to env variable.
+-> attaced this tool with git
+
+difftool configuration:
+git config --global diff.tool p4merge
+git config --global difftool.p4merge.path "C:/Program Files/Perforce/p4merge.exe"
+git config --global difftool.prompt false
+
+-> for megetool configuation we can perform same steps as above except instead of diff merge will be used.
+git diff file1.txt ===> git difftool file1.txt are same now
+
+To remove files from different areas:->
+git rm command
+
+
+case-I:-> To remove files from both staging area and working directory
+git rm file1.txt
+git rem -r . (all files will be removed from both area)
+case-II:-> To remove files only from staging area but not from working directory
+git rm --cached file4.txt
+case-III:-> To remove files only from working directory but not from staging area
+rm file1.txt
+
+
+git checkout command:->
+-> we can use checkout command to discord unstaged changes in the tracked files of working directory.
+git checkout -- file1.txt:-> To discard unstaged changes in file1.txt
+git checkout . :-> To discard unstaged changes in every tracked file of working directory.
+git checkout :-> it will list all eligible files, for which checkout is applicable.
+
+
+git references:->
+-> For most of the commands(like git log,git diff etc) we have to use commit ids as arguments. but remembering these commit ids is very difficult.
+-> 40 length commit id | 7 characters
+-> git provies some sample names for these commit ids.we can use these names instead of commit ids.these are just pointers to commit ids.
+-> these sample names are nothing but references.
+-> git referencs are pointers to commit ids.
+-> The most recent commit id ===> master or HEAD
+-> .git/refs directory ===> here all references will be storeed.
+-> heads,tags and remotes etc.
+
+what is master?
+-> master is the name of the branch.
+-> it is a referene(pointer) to last commit. hence where ever last commit id required, we can use simpley master.
+-> .git/refs/heads/master
+git show 8594261
+git show master
+git show master~1
+git show master~2
+
+What is HEAD:->
+-> HEAD is a reference to master.
+-> if any reference pointing to another reference, such type of reference is called symbolic reference. HEAD is a symbolic reference.
+-> by default HEAD is always pointing to the master.
+-> HEAD information is available at .git directory only.
+git show 8594261
+git show HEAD
+git show HEAD~1
+git show HEAD~2
+
+Detached HEAD:
+-> sometimes HEAD is not pointing to the branch name, such type of HEAD is called HEAD.
+
+
+git reset command:
+-> There are two utilities of git reset command.
+i. To remove changes from staging area
+ii. To undo commits at repository level.
+
+
+Utility1: To remove changes from staging ara
+-> it will bring changes from staging area back to working directory.
+-> it is opposite to git add command
+git reset file1.txt
+
+git checkout vs git reset:
+-> git checkout can be used to discard unstaged changes in working directory.
+-> git reset can be used to discard staged changes from staging area.
+
+git rm --cached vs git reset:
+-> git rem --cached file1.txt it will delete the file from staging area. 
+-> git reset file1.txt the file won't be deleted from staging area, but reset to previous state(on step back).
+
+Q. We modified the content of file1.txt and added to staging area. but we want to ignore those changes in both staging area and in working directory. for this
+requirement which commands are required to use??
+git reset file1.txt
+git checkout -- file1.txt
+
+
+Utility2: To undo commits at repository level
+-> we can also use reset to undo commits at repository level
+syntax
+git reset commitid;
+
+Case-I:-> To discard only 3rd commit
+we can not delete random commit. it is not possible.
+head will mobed to specified commit. 
+git reset <mode> <commitid>
+-> Moves the HEAD to the specified commit, and all remaining recent commits will be deleted from repository.
+-> mode will decide whether these changes are going to remove from staging area or not from working directory or not.
+-> the allowed values for the mode are
+--mixed
+--soft
+--hard
+--keep
+--merge
+
+i. --mixed reset mode:
+-> it is the default mode.
+git reset --mixed commitid
+git reset commitid
+-> To discard/remove commits from repository and from staging area also.
+-> it won't touch working directory
+-> we can revert because changes are available in working directory.
+git reset --mixed 0d0172a
+git reset 0d0172a
+git reset --mixed HEAD~1
+git reset HEAD~1
+
+ii. --soft reset mode:
+-> deleted changes only from local repositroy.
+-> it won't touch staging area and working directory.
+-> possible to revert back changes.
+
+iii. --hard reset mode
+-> deleted changes from everywhere.
+-> not possible to revert changes
+
+
+GIT Aliasing:->
+-> Alias means nick name or other alternatives name
+git log --oneline ==> git one
+git status ===> gt st
+
+Q1. Create alias name 'one' to the following command
+git log --oneline
+Test whether alias name already used or not
+git one 
+
+$git one
+git: 'one' is not a fit command. see 'git --help'
+
+Creating alias name:
+original command: git log --oneline
+alias: one
+By using git config command we can define aliases
+Syntax:
+git config --global alias.aliasName "orginal command"
+Example:
+git config --global alias.one "log --oneline"
+now we can write git one
+
+Q2: Create alias name 's' for the following git command
+git status
+
+git config --global alias.s "status"
+now we can write git s
+
+Where these aliases will be stored??
+-> .gitconfig file
+
+
+Gitignore file->
+-> we have to create a special file called .gitignore.it's content will be
+#igonore a.txt file
+a.txt
+#Igonore all .txt files
+*.txt
+#Ignore hidden file
+.*
+#Ignore all files present in /log directory
+logs/
+
+
+How git treats directories:
+-> GIT always worry about files but not directories.
+-> git never give any special importance for directories.
+->
+
+
+
+Branching:->
+-> master branch is default branch/main branch in git.
+-> Generally main source code will place in master branch.
+
+What is the need of creating a branch:
+-> Suppose I will separate work space for ios so what is different between branch?
+master branch --> for developing web application
+child branch-1 --> for Android compatibility work
+child branch-2 --> for ios compatibility work
+multiple flows = > parallel development,code base very cleanly.
+
+conclusion:->
+-> Once we creates a branch all files and commits will be inherited from parent branch to child branch.
+-> In child branch we can create new files and we can perform any changes in the exisitng files and we can commit those changes based on our requirement.
+-> All branches are isolated to each other. the changes performed in one branch are not visible to other branch.
+-> Once we completed our work in child branch, we can merge that new branch with master branch or we can push that branch directory to the
+remote repository.
+
+1. To view available branches
+git branch
+
+2. To create a new branch
+git branch branch_name
+
+3. How to switch from one branch to another branch
+git checkout branch_name
+
+4.Combining 2 and 3 command in single line
+git checkout -b branch_name
+it will create a branch then switched to that branch.
+
+Note:-> in git there is logical division of files not physical between different branches.during the checkout position of HEAD will pointing to checkout branches.
+
+
+Merging of a branch:
+->we created a branch to implement a new features.
+-> we completed implementation of that new features.
+-> we have to combined those changes from child branch with parent branch.
+-> this combined process is nothing but merging.
+
+git merge childbranch
+
+
+Types of Merge:
+i. Fast forward merge
+ii. 3 way merge
+
+
+Fast Forward Merge:->
+-> After creating child branch, if we are not doing any changes in the parent branch,git will perform fast forward merge.
+-> In the fast forward merge, git simply moves parent branch pointer to the last commit of child branch.
+-> In fast forward merge there is no chance of merge conflicts.
+
+Three Way Merge:->
+-> After creating child branch if parent branch also contains some new commits,3 way merge.
+-> both parent a child branches updated.
+-> git will perform 3 way merge.
+-> in this merge git create new merge commit and points to that merge.
+
+Fast forward VS 3 way merge:
+-> After creating child only child branch is modified but parent branch is not modified,git VS After creating child,both parent and child branches are updated.
+-> it does not require any new commit VS A new commit will be created which is also known as merge commit.
+-> No chances of conflict VS may be a chance o conflicts.
+-> it is fully handled by git VS if there is a conflict we have to handle manually.
+
+
+How to delete a branch:->
+git branch -d branch_name
+
+
+Graph Non-Linear:
+-> A new commit(merge commit) created.
+-> May be a chance of merge conflict.
+
+Rebase operation:->
+
+i. Linear Flow instead of non-linear flow
+ii. New commits should not be created like merge commit.
+iii. We should not have any conflicts
+
+-> Rebase is alternative to merge operation.
+-> Rebase ===> Re + Base ===> Re arrange Base
+
+
+Process of rebasing:->
+-> Merge is a single step process
+-> git merge feature
+-> it is 2 step process.
+
+step-1:-> We have to rebase feature branch on top of master branch
+git checkout feature
+git rebase master 
+-> this command will create the duplicate commit of child branch and points
+to the lateast commit of master branch.
+-> whatever commits are there in the feature branch will be duplicated by git.
+-> here everything(like commit message,timestamp,author name, email etc) is same 
+except commit ids.
+-> the base commit of feature branch will be updated as last commit of the parent branch.
+
+step-2:-> we have to merge feature branch into master branch(fast forward merge).
+git checkout master
+git merge feature
+
+Advantage Of Rebase:->
+-> Rebase keeps history linear. every commit has a single parent.
+-> Clear work flow(linear) will be there. easy to understand for the developers.
+-> fast forward merge, no chance of conflicts.
+-> no extra commit like merge commit
+
+Dis-advantages:
+-> it rewrites history. we cannot see history of commit from the feature branch.
+-> we does not aware which changes are coming from features branch.
+
+Note:-> Rebase is very dangerious operation and it is never recommended to use on  public
+repositories because it rewrites history.
+
+
+
+Git Stash:->
+-> It is bit advance concept in GIT.
+-> We have to save uncommitted changes from working directory and staging area to some temporary
+location. for this we have to use git stash command.
+-> now working tree will be clean.
+-> then we can do our urgent work and commit that urgent work.
+-> we have to bring back the saved changes and then we can continue the work.
+-> unstash ===> git stash pop/apply
+-> git stash is only applicable for tracked files.
+-> to perform git stash atleast one commit should be there.
+-> we can stash multiple times also. how many stashes are there???
+git stash list
+git show stash@{0}
+git stash pop/apply stash@{0}
+
+
+git stash pop:
+-> it will bring stashed changes from temporary location to working directory. the corresponding
+entry will be deleted.
+
+
+git stash apply:
+-> it will bring stashed changes from temporary location to working directory. the corresponding
+entry will not be deleted and we can use this stash in other branches.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
